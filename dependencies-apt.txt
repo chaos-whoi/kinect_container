@@ -1,0 +1,9 @@
+# ROS
+ros-noetic-ros-base
+
+# For debugging
+tmux
+nano
+
+# For kinect
+git
