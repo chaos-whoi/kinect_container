@@ -10,7 +10,7 @@ ARG MAINTAINER
 ARG BASE_REGISTRY=docker.io
 ARG BASE_ORGANIZATION=cpkbase
 ARG BASE_REPOSITORY=ubuntu
-ARG BASE_TAG=focal
+ARG BASE_TAG=bionic
 
 # define base image
 FROM ${BASE_REGISTRY}/${BASE_ORGANIZATION}/${BASE_REPOSITORY}:${BASE_TAG}-${ARCH} as BASE
@@ -21,7 +21,7 @@ ARG NAME
 ARG ORGANIZATION
 ARG DESCRIPTION
 ARG MAINTAINER
-ARG ROS_DISTRO=noetic
+ARG ROS_DISTRO=melodic
 # - base project
 ARG BASE_REGISTRY
 ARG BASE_ORGANIZATION
@@ -90,7 +90,7 @@ RUN mkdir /home/git \
     && mkdir build && cd build \
     && cmake .. \
     && make \
-    && make install 
+    && make install
     # && apt-get update && apt-get install -y libcanberra-gtk*
 
 # install launcher scripts
