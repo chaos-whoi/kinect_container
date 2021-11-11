@@ -61,7 +61,7 @@ beignet-opencl-icd: no supported GPU found, this is probably the wrong opencl-ic
 + `[Error] [Freenect2Impl] failed to open Kinect v2: @6:4 LIBUSB_ERROR_NO_DEVICE No such device (it may have been disconnected)`
     + Solution: ensure that the `--privileged` flag is set
 
-+ `Internal Server Error ("invalid reference format: repository name must be lowercase")`
++ `Internal Server Error ("invalid reference format: repository name must be lowercase")` or `ConnectionResetError: [Errno 104] Connection reset by peer`
     + Solution: Delete the .git folder in the repo (Note: this is a temporary patch, see [this issue](https://github.com/afdaniele/cpk/issues/16))
 
 
