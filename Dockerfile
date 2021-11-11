@@ -104,6 +104,12 @@ COPY ./*.cpk ./*.sh ${PROJECT_PATH}/
 # copy the source code
 COPY ./packages "${CPK_PROJECT_PATH}/packages"
 
+# install rosdeps
+RUN apt install python-rosdep
+RUN /opt/ros/${ROS_DISTRO}/env.sh rosdep init && \
+    rosdep update
+RUN rosdep install -iry --from-paths .
+
 # build catkin workspace
 RUN . /opt/ros/${ROS_DISTRO}/setup.sh && \
     catkin build \
