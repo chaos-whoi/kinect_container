@@ -16,7 +16,8 @@ cpk run -M -f --net=host -- \
   --env=NVIDIA_VISIBLE_DEVICES=all \
   --env=NVIDIA_DRIVER_CAPABILITIES=all \
   --env=DISPLAY --runtime=nvidia \
-  --env=QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix
+  --env=QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix \
+  --privileged
 ```
 
 ## About the cpk build flags:
