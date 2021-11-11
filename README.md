@@ -1,6 +1,6 @@
 # Kinect Container
 Containerized version of the [iai_kinect2](https://github.com/code-iai/iai_kinect2)
-repository, used to publish kinect data to ROS.
+repository, used to publish kinect data to ROS. Tested on a desktop with Ubuntu 20.04.3 and an Xbox One kinect.
 
 ## Setup
 + You need `cpk` in order to be able to build and run this project. Install `cpk` via `pip3` using the command `pip3 install cpk`. For more information on cpk, visit the [cpk repo](https://github.com/afdaniele/cpk)
