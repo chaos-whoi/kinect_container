@@ -1,5 +1,6 @@
 # ROS
 ros-melodic-ros-base
+ros-melodic-image-pipeline
 
 # For debugging
 tmux
